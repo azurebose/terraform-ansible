@@ -1,7 +1,6 @@
 resource "aws_instance" "myec2" {
-  ami                    = "ami-08df646e18b182346"
+  ami                    = "ami-0fc5d935ebf8bc3bc"
   instance_type          = "t2.micro"
-  availability_zone = "ap-south-1a"
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
   key_name = "pswain"
 
